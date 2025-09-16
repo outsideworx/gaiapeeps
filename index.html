@@ -3,12 +3,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="TBD"/>
-    <meta name="author" content="Outside Worx"/>
-    <meta name="robots" content="index, follow">
-    <title>GAIAPEEPS</title>
+    <title>GaiaPeeps</title>
+    <style>
+        body {
+          margin: 0;
+          font-family: Arial, sans-serif;
+          background-color: #0F0F0F;
+          color: #fff;
+          display: flex;
+          flex-direction: row;
+          min-height: 100vh;
+        }
+
+        .left-panel {
+          width: 40%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: flex-start;
+          padding: 120px 20px 20px;
+        }
+
+        .left-panel img {
+          max-width: 250px;
+        }
+
+        .right-panel {
+          width: 60%;
+          display: flex;
+          flex-direction: column;
+          padding: 20px;
+        }
+
+        .videos {
+          display: flex;
+          gap: 20px;
+          justify-content: center; /* keep videos centered */
+          flex-wrap: wrap;
+          margin-bottom: 20px;
+        }
+
+        .videos iframe {
+          width: 100%;
+          max-width: 300px; /* prevent oversized single video */
+          aspect-ratio: 9/16; /* Shorts format */
+          border: none;
+          border-radius: 8px;
+        }
+
+        .bio {
+          font-size: 18px;
+          line-height: 1.6;
+          border-top: 1px solid #444;
+          padding-top: 20px;
+        }
+
+        /* Mobile responsive layout */
+        @media (max-width: 900px) {
+          body {
+            flex-direction: column;
+          }
+          .left-panel, .right-panel {
+            width: 100%;
+          }
+          .videos {
+            flex-direction: column;
+            align-items: center;
+          }
+          .videos iframe {
+            width: 90%;
+            max-width: 400px;
+          }
+        }
+    </style>
 </head>
 <body>
-    <h2>Taken by <a href="https://outsideworx.net">outsideworx.net</a> :-)</h2>
+<div class="left-panel">
+    <!-- Flower animation -->
+    <img id="flower" src="img/flower_1.jpg" alt="Animated Flower">
+    <!-- Logo animation -->
+    <img id="logo" src="img/logo_1.jpg" alt="Animated Logo" style="margin-top:20px; max-width:200px;">
+</div>
+
+<div class="right-panel">
+    <div class="videos">
+        <!-- Add/remove YouTube videos as needed -->
+        <iframe height="560" src="https://www.youtube.com/embed/ocgAOfgjJtY" title="RIP CHARLIE KIRK" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+    <div class="bio">
+        <p>
+            Gaia Peeps is a band that blends organic rhythms with soulful melodies,
+            creating music that’s as alive as the planet we live on.
+            Our sound is rooted in love, connection, and storytelling. 🌱🎶
+        </p>
+    </div>
+</div>
+
+<script>
+    // Flower flipbook animation
+    const flowerFrames = ["img/flower_1.jpg", "img/flower_2.jpg", "img/flower_3.jpg", "img/flower_4.jpg"];
+    let flowerIndex = 0;
+    const flowerImg = document.getElementById("flower");
+
+    setInterval(() => {
+      flowerIndex = (flowerIndex + 1) % flowerFrames.length;
+      flowerImg.src = flowerFrames[flowerIndex];
+    }, 1500);
+
+    // Logo animation
+    const logoFrames = ["img/logo_1.jpg", "img/logo_2.jpg"];
+    let logoIndex = 0;
+    const logoImg = document.getElementById("logo");
+
+    setInterval(() => {
+      logoIndex = (logoIndex + 1) % logoFrames.length;
+      logoImg.src = logoFrames[logoIndex];
+    }, 1000);
+</script>
 </body>
 </html>
