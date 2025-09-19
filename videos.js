@@ -1,7 +1,6 @@
   function loadVideos() {
     $.ajax({
-      url: `http://localhost:8080/api/gaiapeeps`,
-      headers: {"X-Caller-Id": "gaiapeeps", "X-Auth-Token": "test"},
+      url: `/api/videos`,
       method: "GET",
       success: function(videos) {
         console.log("LOG: response - ", videos);
