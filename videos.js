@@ -1,8 +1,10 @@
   function loadVideos() {
     $.ajax({
-      url: `/api/videos`,
+      url: `http://localhost:8080/api/gaiapeeps`,
+      headers: {"X-Caller-Id": "gaiapeeps", "X-Auth-Token": "test"},
       method: "GET",
       success: function(videos) {
+        console.log("LOG: response - ", videos);
         const container = $("#videos");
         container.empty(); // clear old content
 
