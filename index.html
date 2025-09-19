@@ -100,21 +100,9 @@
     <!-- Logo animation -->
     <img id="logo" src="img/logo_1.jpg" alt="Animated Logo" style="margin-top:20px; max-width:200px;">
 </div>
-
 <div class="right-panel">
-    <div class="videos">
-        <!-- Add/remove YouTube videos as needed -->
-        <iframe
-                height="560"
-                src="https://www.youtube.com/embed/ocgAOfgjJtY"
-                title="RIP CHARLIE KIRK"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin"
-                allowfullscreen>
-        </iframe>
+    <div id="videos" class="videos">
     </div>
-
     <div class="bio">
         <p>
             Welcome to Gaia Peeps, where art and AI breathe together.
@@ -133,7 +121,8 @@
         </p>
     </div>
 </div>
-
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="videos.js"></script>
 <script>
     // Flower flipbook animation
     const flowerFrames = ["img/flower_1.png", "img/flower_2.png", "img/flower_3.png", "img/flower_4.png"];
