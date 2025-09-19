@@ -5,8 +5,7 @@
       success: function(videos) {
         console.log("LOG: response - ", videos);
         const container = $("#videos");
-        container.empty(); // clear old content
-
+        container.empty();
         videos.forEach(video => {
           const iframe = $("<iframe>", {
             height: "560",
