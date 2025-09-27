@@ -23,5 +23,5 @@ function loadVideos() {
             console.error("Error loading videos:", status, error);
         }
     });
-
+}
 $(document).ready(loadVideos);
