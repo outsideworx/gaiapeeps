@@ -60,6 +60,7 @@
           line-height: 1.6;
           border-top: 1px solid #444;
           padding-top: 20px;
+          text-align: center;
         }
 
         a {
@@ -96,7 +97,7 @@
 <body>
 <div class="left-panel">
     <!-- Flower animation -->
-    <img id="flower" src="img/flower_1.png" alt="Animated Flower">
+    <img id="flower" src="img/flower_1.webp" alt="Animated Flower">
     <!-- Logo animation -->
     <img id="logo" src="img/logo_1.jpg" alt="Animated Logo" style="margin-top:20px; max-width:200px;">
 </div>
@@ -104,28 +105,14 @@
     <div id="videos" class="videos">
     </div>
     <div class="bio">
-        <p>
-            Welcome to Gaia Peeps, where art and AI breathe together.
-            <br>
-            Lyrics born from the artist’s own hand become songs, guided not by chance, but by intention.
-            <br>
-            Each note is shaped through professional instruction—AI as the instrument, creativity as the player.
-        </p>
-        <p>
-            Even this page is part of the symphony, a collaboration between human vision and machine imagination.
-            <br>
-            A new canvas, where technology listens and art leads.
-        </p>
-        <p>
-            For more, mail us at <a href="mailto:info@gaiapeeps.com" target="_blank">info@gaiapeeps.com</a>
-        </p>
+        <img src="img/title.webp" alt="">
     </div>
 </div>
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <script src="videos.js"></script>
 <script>
     // Flower flipbook animation
-    const flowerFrames = ["img/flower_1.png", "img/flower_2.png", "img/flower_3.png", "img/flower_4.png"];
+    const flowerFrames = ["img/flower_1.webp", "img/flower_2.webp", "img/flower_3.webp", "img/flower_4.webp"];
     let flowerIndex = 0;
     const flowerImg = document.getElementById("flower");
 
