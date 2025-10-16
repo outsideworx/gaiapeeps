@@ -1,6 +1,6 @@
 function loadVideos() {
     $.ajax({
-        url: `/api/videos`,
+        url: "/api/gaiapeeps",
         method: "GET",
         success: function(videos) {
             console.log("LOG: response - ", videos);
