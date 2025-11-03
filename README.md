@@ -3,7 +3,7 @@ The site features AI-generated instrumental tracks paired with lyrics written by
 The AI creates unique soundscapes by analyzing musical patterns and structures, while the human contribution brings emotional depth and meaning through words.
 The goal of Gaia Peeps is not to replace human artistry but to highlight how technology can be used as a tool in the creative process.
 By combining machine-made music with human-written lyrics, the project demonstrates a balance between innovation and authenticity.
-[gaiapeeps.com](https://gaiapeeps.com)
+[gaiapeeps.com](https://services.outsideworx.net:9003)
 
 ---
 
