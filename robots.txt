@@ -2,5 +2,6 @@ User-agent: *
 Disallow: /
 Allow: /sitemap.xml
 Allow: /index.html
+Allow: /img/favicon.ico
 
 Sitemap: https://gaiapeeps.com/sitemap.xml
