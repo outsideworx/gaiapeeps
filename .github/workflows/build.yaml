@@ -16,3 +16,9 @@ jobs:
               event_type: 'build-sites',
               client_payload: { name: 'gaiapeeps' }
             })
+            await github.rest.repos.createDispatchEvent({
+              owner: 'outsideworx',
+              repo: 'outsideworx',
+              event_type: 'update-submodule',
+              client_payload: { name: 'gaiapeeps' }
+            })
